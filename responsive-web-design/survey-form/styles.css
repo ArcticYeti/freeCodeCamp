@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(#373e4b, #282a2f);
+    font-family: Tahoma;
+    font-size: 18;
+    height: 100vh;
+    color: #c0c0c0;
+}
+
+h1,
+p {
+    margin: 2em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding: 0.3rem 0;
+}
+
+label {
+    display: block;
+    margin: 1.3rem 0;
+}
+
+select,
+input,
+textarea {
+    border-radius: 8px;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.5em;
+}
+
+input,
+textarea,
+select {
+    background-color: #181a1f;
+    padding: 0 13;
+    /* text-indent: 10px; */
+    color: #c0c0c0;
+}
+
+textarea {
+    margin-top: 8px;
+    padding: 13px 15px;
+    /* text-indent: unset; */
+}
+
+.inline {
+    width: 1.4em;
+    margin: -0.5 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.checkbox-label {
+    margin: 0.4rem 0;
+}
+
+.esolang-radio-label {
+    margin: 0.2rem 0;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #474e4b;
+    border-color: #373e3b;
+    min-width: 300px;
+}

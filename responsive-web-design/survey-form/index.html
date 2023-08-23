@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example Survey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Example Survey</h1>
+    <p id="description">This is an example survey website!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required></input></label>
+        <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required></input></label>
+        <label id="number-label">Age (optional)<input type="number" min=13 max=120 id="number" placeholder="Age"></label>
+      </fieldset>
+      <fieldset>
+        <label id="dropdown-label">What's your favorite programming language?
+          <select id="dropdown">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="cpp">HolyC</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label id="radio-label">What do you think of esoteric programming languages?
+        </label>
+          <label class="esolang-radio-label" id="esolang-radio-like-label"><input type="radio" class="inline" name="esolang-radio" id="esolang-radio-like" value="esolang-radio-like"> I like them!</label>
+          <label class="esolang-radio-label" id="esolang-radio-dislike-label"><input type="radio" class="inline" name="esolang-radio" id="esolang-radio-dislike" value="esolang-radio-dislike"> I don't like them!</label>
+          <label class="esolang-radio-label" id="esolang-radio-unsure-label"><input type="radio" class="inline" name="esolang-radio" id="esolang-radio-unsure" value="esolang-radio-unsure"> I'm not sure...</label>
+      <label>Which qualities do you value in a programming language?</label>
+        <label class="checkbox-label" id="checkbox-performance-label"><input type="checkbox" value="performance" class="inline"> Performance</input></label>
+        <label class="checkbox-label" id="checkbox-simplicity-label"><input type="checkbox" value="simplicity" class="inline"> Simplicity</input></label>
+        <label class="checkbox-label" id="checkbox-complexity-label"><input type="checkbox" value="complexity" class="inline"> Complexity</input></label>
+        <label id="comment-label">Additional comments
+          <textarea id="comment" rows=3 col=30 placeholder="Enter your comment"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
